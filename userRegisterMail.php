@@ -63,7 +63,7 @@
             <td colspan="4" style="color:hsl(0,0%,100%);padding-top:20px;padding-bottom:10px;">Having trouble? <a href="https://localhost/LICProject/queries.html" style="color:hsl(0, 0%, 100%);">Contact us</a></td>
         </tr>
         <tr style="background-color:hsl(210, 75%, 24%);">
-            <td colspan="4" style="padding-top:10px;padding-bottom:20px;"><a href="https://localhost/LICProject/index.html"><button style="line-height:40px;border-radius:3px;border:none;font-family:'Lato',sans-serif;font-size:14px;box-shadow: 2px 2px 3px hsl(0, 0%, 40%);outline:none;cursor: pointer;background-color:hsl(0, 0%, 100%);color:hsl(210, 75%, 25%);width:180px;margin-top:10px;margin-bottom:20px;">Continue to homepage</button></a></td>
+            <td colspan="4" style="padding-top:10px;padding-bottom:20px;"><a href="https://localhost/LICProject/index.php"><button style="line-height:40px;border-radius:3px;border:none;font-family:'Lato',sans-serif;font-size:14px;box-shadow: 2px 2px 3px hsl(0, 0%, 40%);outline:none;cursor: pointer;background-color:hsl(0, 0%, 100%);color:hsl(210, 75%, 25%);width:180px;margin-top:10px;margin-bottom:20px;">Continue to homepage</button></a></td>
         </tr>
         <tr style="background-color:hsl(210, 75%, 20%);border-top-left-radius:10px;border-top-right-radius:10px;">
             <td colspan="4" style="color:hsl(0,0%,100%);font-weight:300;font-size:12px;width:100%;padding-top:10px;padding-bottom:10px;text-align:center;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">Copyright &copy; Ayush Kumar 2020. All Rights Reserved.</td>
@@ -114,7 +114,7 @@
             <td colspan="4" style="color:hsl(0,0%,100%);padding-top:20px;padding-bottom:10px;">Having trouble? <a href="https://localhost/LICProject/queries.html" style="color:hsl(0, 0%, 100%);">Contact us</a></td>
         </tr>
         <tr style="background-color:hsl(210, 75%, 24%);">
-            <td colspan="4" style="padding-top:10px;padding-bottom:20px;"><a href="https://localhost/LICProject/index.html"><button style="line-height:40px;border-radius:3px;border:none;font-family:sans-serif;font-size:14px;box-shadow: 2px 2px 3px hsl(0, 0%, 40%);outline:none;cursor: pointer;background-color:hsl(0, 0%, 100%);color:hsl(210, 75%, 25%);width:180px;margin-top:10px;margin-bottom:20px;">Continue to homepage</button></a></td>
+            <td colspan="4" style="padding-top:10px;padding-bottom:20px;"><a href="https://localhost/LICProject/index.php"><button style="line-height:40px;border-radius:3px;border:none;font-family:sans-serif;font-size:14px;box-shadow: 2px 2px 3px hsl(0, 0%, 40%);outline:none;cursor: pointer;background-color:hsl(0, 0%, 100%);color:hsl(210, 75%, 25%);width:180px;margin-top:10px;margin-bottom:20px;">Continue to homepage</button></a></td>
         </tr>
         <tr style="background-color:hsl(210, 75%, 20%);border-top-left-radius:10px;border-top-right-radius:10px;">
             <td colspan="4" style="color:hsl(0,0%,100%);font-weight:300;font-size:12px;width:100%;padding-top:10px;padding-bottom:10px;text-align:center;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">Copyright &copy; Ayush Kumar 2020. All Rights Reserved.</td>
