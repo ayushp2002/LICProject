@@ -207,7 +207,7 @@
             <div class="block">
                 <div class="head">
                     <h2>Step 1 : Registration and submission of Documents</h2>
-                    <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/expand-arrow-icon.png" class="expandicon" id="expicon1" onclick="toggleRegprocessContent1()">
+                    <img src="https://lic-agent-recruitment.herokuapp.com/images/expand-arrow-icon.png" class="expandicon" id="expicon1" onclick="toggleRegprocessContent1()">
                 </div>
                 <div class="content" id="cont1">
                     <p>
@@ -219,12 +219,12 @@
                 </div>
             </div>
             <div class="wrapper" id="parr1">
-                <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/arrow-icon.png" class="processarrow">
+                <img src="https://lic-agent-recruitment.herokuapp.com/images/arrow-icon.png" class="processarrow">
             </div>
             <div class="block">
                 <div class="head">
                     <h2>Step 2 : Training</h2>
-                    <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/expand-arrow-icon.png" class="expandicon" id="expicon2" onclick="toggleRegprocessContent2()">
+                    <img src="https://lic-agent-recruitment.herokuapp.com/images/expand-arrow-icon.png" class="expandicon" id="expicon2" onclick="toggleRegprocessContent2()">
                 </div>
                 <div class="content" id="cont2">
                     <p>
@@ -236,12 +236,12 @@
                 </div>
             </div>
             <div class="wrapper" id="parr2">
-                <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/arrow-icon.png" class="processarrow">
+                <img src="https://lic-agent-recruitment.herokuapp.com/images/arrow-icon.png" class="processarrow">
             </div>
             <div class="block">
                 <div class="head">
                     <h2>Step 3 : Licensing</h2>
-                    <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/expand-arrow-icon.png" class="expandicon" id="expicon3" onclick="toggleRegprocessContent3()">
+                    <img src="https://lic-agent-recruitment.herokuapp.com/images/expand-arrow-icon.png" class="expandicon" id="expicon3" onclick="toggleRegprocessContent3()">
                 </div>
                 <div class="content" id="cont3">
                     <p>
@@ -252,12 +252,12 @@
                 </div>
             </div>
             <div class="wrapper" id="parr3">
-                <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/arrow-icon.png" class="processarrow">
+                <img src="https://lic-agent-recruitment.herokuapp.com/images/arrow-icon.png" class="processarrow">
             </div>
             <div class="block">
                 <div class="head">
                     <h2>Step 4 : Working</h2>
-                    <img src="https://lic-agent-recruitment.herokuapp.com/LICProject/images/expand-arrow-icon.png" class="expandicon" id="expicon4" onclick="toggleRegprocessContent4()">
+                    <img src="https://lic-agent-recruitment.herokuapp.com/images/expand-arrow-icon.png" class="expandicon" id="expicon4" onclick="toggleRegprocessContent4()">
                 </div>
                 <div class="content" id="cont4">
                     <p>
