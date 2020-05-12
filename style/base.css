@@ -1,0 +1,744 @@
+.wow {
+    visibility: hidden;
+}
+html {
+    overflow-x: hidden;
+}
+body, html {
+    font-family: 'Lato', sans-serif;
+    transition-duration: 0.5s;
+}
+button {
+    width: 150px;
+    line-height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(210, 75%, 30%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    box-shadow: 2px 2px 3px hsl(0, 0%, 40%);
+    outline:none;
+    cursor: pointer;
+}
+a {
+    color: hsl(210, 75%, 30%);
+}
+button:active {
+    box-shadow: none;
+}
+input, textarea {
+    line-height: 38px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: hsl(0, 0%, 80%);
+    border-color: hsl(0, 0%, 60%);
+    outline: none;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 50%);
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+input:focus, textarea:focus {
+    box-shadow: inset 0px 0px 4px hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 26%);
+}
+.error-input {
+    border-color: hsl(0, 100%, 60%) !important;
+    border-width: 2px !important;
+    background-color: hsl(0, 100%, 90%) !important;
+    background-image: url("/LICProject/images/icon-error.svg");
+}
+.valid-input {
+    border-color: hsl(123, 100%, 60%) !important;
+    border-width: 2px !important;
+    background-color: hsl(123, 100%, 90%) !important;
+    background-image: url("/LICProject/images/icon-valid.svg");
+}
+.form-error {
+    font-size: 13px;
+    color: hsl(0, 100%, 60%);
+    margin-bottom: 5px;
+    display: none;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: hsl(210, 75%, 30%);
+}
+h2 {
+    font-weight: 400;
+    color: hsl(210, 75%, 30%);
+}
+.mask {
+    z-index: 98;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsla(0, 0%,0%, 0.9);
+    position: fixed;
+}
+.regmodal {
+    z-index: 99;
+    position: fixed;
+    padding: 5% 2.5%;
+    background-color: hsla(0, 0%, 100%, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: hsla(0, 0%, 0%, 0.2);
+    outline-offset: -2px;
+    /* transition-duration: 1s; */
+}
+.regmodal .closeicon{
+    height: 30px;
+    width: 30px;
+    background-image: url("/LICProject/images/close-grey-icon.svg");
+    background-size: cover;
+    background-position: center;
+    align-self: flex-end;
+}
+.regmodal .heading {
+    text-align: center;
+}
+.regmodal .heading h2 {
+    margin-top: 10px;
+    font-size: 19px;
+}
+.regmodal form {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.regmodal form .input {
+    position: relative;
+    align-self: center;
+    width: 100%;
+}
+.regmodal form .input input {
+    /* background-image: url("/LICProject/images/icon-error.svg"); */
+    background-repeat: no-repeat;
+    background-position: 96%;
+    width: 100%;
+}
+.regmodal form button {
+    align-self: center;
+}
+.menu {
+    visibility: hidden;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 85%;    /* To not let the 20% padding hide the social icons */
+    background-color: hsla(0, 0%, 100%, 0.97);
+    transition-duration: 0.5s;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+.menu .links li {
+    list-style: none;
+    margin: 30px;
+}
+.menu .links li a {
+    text-decoration: none;
+    color: hsl(210, 75%, 24%);
+    font-size: 25px;
+    border-bottom: solid 1px hsl(210, 75%, 24%);
+}
+.menu .links li a:active {
+    border-bottom-style: none;
+}
+.menu .social a {
+    margin: 10px;
+}
+nav {
+    background-color: hsl(0, 0%, 100%);
+    line-height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+nav .links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+nav .links li {
+    list-style: none;
+    display: inline;
+}
+nav .links li a {
+    text-decoration: none;
+}
+nav .hamburger {
+    z-index: 20;
+    height: 30px;
+}
+nav .logo {
+    margin-left: 33vw;
+    height: 60px;
+}
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .heading-wrapper {
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsla(0, 0%, 0%, 0.6);
+    min-height: 175px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .heading {
+    font-size: 50px;
+    color: rgb(19, 76, 133);
+    margin-bottom: 20px;
+}
+.hero .subheading {
+    color: hsl(210, 75%, 30%);
+    margin-bottom: 20px;
+}
+.hero .calltoaction {
+    /* margin-bottom: 50px; */
+}
+.hero .dn-arrow {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 90%;
+}
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 90vw;
+}
+.content .article h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+.guidecall {
+    background-image: url("/LICProject/images/books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    padding: 7% 7% 7% 53%;
+}
+.guidecall .wrapper {
+    text-align: center;
+}
+.guidecall h1 {
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+}
+.regdetails {
+    margin: 40px 1% 40px 1%;
+}
+.regdetails h1 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.regdetails .blocks {
+    display: flex;
+    justify-content: space-between
+}
+.regdetails .blocks .block {
+    margin: 17px 2% 17px 2%;
+    background-color: hsl(0, 0%, 80%);
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* border-color: hsla(0, 0%, 0%, 0.1); */
+    /* Used outline to put the border inside */
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: hsla(0, 0%, 0%, 0.2);
+    outline-offset: -2px;
+    transition-duration: 0.3s;
+}
+.regdetails .blocks .block:hover {
+    box-shadow: 0px 0px 6px hsla(0, 0%, 0%, 0.4);
+}
+.regdetails .blocks .block .title {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: hsl(210, 75%, 30%);
+}
+.regdetails .blocks .block .title h2 {
+    font-family: 'Oswald', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 22px;
+}
+.regdetails .blocks .block .data {
+    width: 94%;
+    padding: 0px 10px 20px 10px;
+}
+.regdetails .blocks .block .data li {
+    margin-top: 22px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.regdetails .blocks .block .data li .item {
+    font-size: 19px;
+    font-weight: 300;
+    color: hsl(0, 0%, 0%);
+    max-width: 80%;
+}
+.regdetails .blocks .block .data li .value {
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(0, 0%, 25%);
+}
+/* if the data contains no value, permit it to use the full width */
+.regdetails .blocks .block .data li .item-only {
+    max-width: 100%;
+}
+.regprocess {
+    margin: 0px 5% 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.regprocess h1 {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+.regprocess .block {
+    padding: 15px 20px;
+    background-color: hsl(210, 75%, 30%);
+    transition-duration: 0.3s;
+}
+.regprocess .block:hover {
+    box-shadow: 0px 0px 6px hsla(0, 0%, 0%, 0.4);
+}
+.regprocess .block .head {
+    display: flex;
+    justify-content: space-between;
+}
+.regprocess .block .head h2 {
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+.regprocess .block .head .expandicon {
+    height: 30px;
+    transition-duration: 0.2s;
+    transform-origin: center;
+    transform: rotate(0deg);
+}
+.regprocess .block .head .expandicon:hover {
+    cursor: pointer;
+}
+.regprocess .block .content {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    display: none;
+}
+.regprocess .block .content p {
+    max-width: 65%;
+    color: hsl(0, 0%, 100%);
+}
+.regprocess .block .content button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(210, 75%, 30%);  
+    line-height: 30px;
+    width: 110px;
+    align-self: flex-end;
+}
+.regprocess .wrapper {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.regprocess .wrapper .processarrow {
+    height: 50px;
+    transform: rotate(90deg);
+}
+.regprocess #parr1 {
+    justify-content: flex-start;
+}
+.regprocess #parr2 {
+    justify-content: center;
+}
+.regprocess #parr3 {
+    justify-content: flex-end;
+}
+.registercall {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    padding: 35px 10% 35px 10%;
+}
+.registercall::before {
+    background-image: url("/LICProject/images/registration-illustration.jpg");
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+.registercall h1 {
+    margin-bottom: 20px;
+}
+.registercall button {
+    line-height: 45px;
+    width: 160px;
+    font-size: 17px;
+}
+footer {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(210, 75%, 15%);
+}
+footer .footercontent {
+    margin: 0;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footercontent .branding {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .footercontent .branding h1 {
+    display: inline;
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+footer .footercontent .branding img {
+    vertical-align: middle;
+    display: inline;
+    height: 50px;
+}
+footer .footercontent .branding .social {
+    align-self: flex-end;
+}
+footer .footercontent .branding .social a img {
+    height: 35px;
+}
+footer .footercontent .links {
+    text-align: right;
+}
+footer .footercontent .links li {
+    list-style: none;
+    margin: 10px;
+}
+footer .footercontent .links li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    border-bottom: solid 1px hsl(0, 0%, 100%);
+}
+footer .footercontent .links li a:hover {
+    border-bottom-style: none;
+}
+footer .rights {
+    text-align: center;
+    background-color: hsl(210, 75%, 7%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.queries {
+    margin-bottom: 0px;
+}
+/* .queries h1 {
+    margin-top: 20px;
+    font-size: 50px;
+} */
+.main {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.main .contactinfo {
+    margin-top: 40px;
+}
+.main .contactinfo h2 {
+    margin-bottom: 10px;
+}
+.main .contactinfo hr {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .contactinfo .info .type {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.main .contactinfo .info .data {
+    font-size: 15px;
+}
+.main form {
+    background-color: hsl(210, 75%, 24%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.main form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 90%);
+}
+.main form .input {
+    position: relative;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.main form input, .main form textarea {
+    width: 100%;
+    background-color: hsl(210, 75%, 24%);
+    transition-duration: 0.3s;
+    border-color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 80%);
+    background-repeat: no-repeat;
+    background-position: 96%;
+}
+.main form input:hover, .main form textarea:hover, .main form input:focus, .queries-main form textarea:focus {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(210, 75%, 25%);
+}
+.main form button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(210, 75%, 30%);
+}
+.register {
+    background-image: url("/LICProject/images/register-hero.jpg");
+    margin-bottom: 0;
+}
+.register .heading {
+    color: hsl(210, 75%, 30%);
+}
+.about {
+    background-image: url("/LICProject/images/hero-about.jpg");
+}
+.about-main {
+    flex-direction: column;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.about-main .large-heading {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+}
+.about-main .large-heading::after {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    content: "";
+    width: 50%;
+    border-bottom: solid 1px hsl(210, 75%, 30%);
+}
+.about-main .section {
+    /* margin-top: 25px; */
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-main .section h2 {
+    margin-bottom: 30px;
+}
+.about-main .section p::before {
+    content: "Answer";
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    background-color: hsl(210, 75%, 30%);
+    color: hsl(0, 0%, 90%);
+    line-height: 20px;
+}
+.about-main .section p {
+    background-color: hsl(0, 0%, 90%);
+    padding: 2%;
+    position: relative;
+    line-height: 20px;
+}
+.about-main .section p::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 3px hsl(210, 75%, 30%);
+}
+.contact-call {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(45deg, hsl(210, 75%, 25%), hsl(210, 75%, 30%));
+    padding: 2% 4% 2% 4%;
+}
+.contact-call .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contact-call .content h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 40px;
+}
+.contact-call .content button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(210, 75%, 15%)
+}
+.contact-call img {
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    vertical-align: baseline;
+}
+.registration-complete-wrapper {
+    background-color: hsl(0, 0%, 90%);
+    margin-top: 3%;
+    border-radius: 10px;
+    text-align: center;
+}
+.registration-complete-wrapper .heading {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.registration-complete-wrapper .heading h1 {
+    margin-bottom: 5px;
+}
+.registration-complete-wrapper .heading h2 {
+    margin-top: 5px;
+}
+.registration-complete-wrapper .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(210, 75%, 30%);
+    color: hsl(0, 0%, 85%);
+    margin-left: 0;
+}
+.registration-complete-wrapper .content p {
+    margin-bottom: 5px;
+}
+.registration-complete-wrapper .content h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 5px;
+}
+.registration-complete-wrapper .content ul {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 5px;
+    padding: 3% 3%;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.2);
+}
+.registration-complete-wrapper .content ul li {
+    list-style: none;
+    color: hsl(0, 0%, 0%);
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.registration-complete-wrapper .content ul li .key {
+    font-weight: 600;
+    color: hsl(210, 75%, 20%);
+}
+.registration-complete-wrapper .content ul li .data {
+    width: 70%;
+    border: solid 1px hsl(210, 75%, 25%);
+    border-radius: 3px;
+    padding: 3px;
+    background-color: hsl(0, 0%, 85%);
+    box-shadow: inset 0 0 3px hsla(0, 0%, 0%, 0.2);
+    font-size: 15px;
+    font-weight: 300;
+}
+.registration-complete-wrapper .content .message {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.registration-complete-wrapper .actions {
+    background-color: hsl(210, 75%, 24%);
+    padding-top: 20px;
+}
+.registration-complete-wrapper .actions p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.registration-complete-wrapper .actions p a {
+    color: hsl(0, 0%, 85%);
+    margin-left: 10px;
+}
+.registration-complete-wrapper .actions button {
+    font-size: 14px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(210, 75%, 25%);
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.registration-complete-wrapper footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.registration-complete-wrapper footer .rights {
+    background-color: hsl(210, 75%, 20%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

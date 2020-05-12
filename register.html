@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600|Oswald:300,400,500&display=swap" rel="stylesheet">
+        
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <script src="./script/styling.js"></script>
+    <script src="./script/validation.js"></script>
+    <!-- <script src="./script/userMailHandler.js"></script> -->
+    
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="./style/desktop.css">
+
+    <title>Register Now: LIC Agent Recruitment</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./queries.html">Your Queries</a></li>
+            <li><a href="./register.html">Become an Agent</a></li>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/pinakiranjan.dubey"><img src="./images/facebook-icon.svg"></a>
+            <a href="#"><img src="./images/instagram-icon.svg"></a>
+            <a href="https://mobile.twitter.com/prdubey2"><img src="./images/twitter-icon.svg"></a>
+        </div>
+    </div>
+    <nav>
+        <img src="./images/hamburger-icon.svg" class="hamburger" onclick="toggleMenu()">
+        <div class="links left">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+        </div>
+        <img src="./images/logo-white-bg.png" class="logo">
+        <div class="links right">
+            <li><a href="./queries.html">Your Queries</a></li>
+            <li><a href="./register.html">Become an Agent</a></li>
+        </div>
+    </nav>
+    <div class="register hero animated fadeIn">
+        <div class="heading-wrapper animated fadeInUp">
+            <h1 class="heading">Become an LIC Agent</h1>
+        </div>
+    </div>
+    <div class="main register-main">
+        <div class="contactinfo wow animated slideInRight">
+            <h2>Know where your information will go.</h2>
+            <span class="info">
+                <p class="type">Its in secure hands</p>
+                <p class="data">All the data you provide here will go only to a single person through mail. <br>You will not recieve any undesired mails on the email id provided.</p>
+            </span>
+            <hr>
+            <span class="info">
+                <p class="type">Where will it be used?</p>
+                <p class="data">It will be used to maintain a record of all the agents. <br>Data like PAN card will be used to verify your identity before your enrollment to the LIC agency.</p>
+            </span>
+        </div>
+        <!-- <form action="./action.php" method="post" novalidate>
+            <h2>Fill this form to start the registration</h2>
+            <input type="text" name="name" value="Full Name">
+            <input type="text" name="phone" value="Phone No">
+            <input type="text" name="pan" value="PAN Number">
+            <input type="email" name="email" value="Email">
+            <button type="submit" name="submit_register_button">Register</button>
+        </form> -->
+        <form method="post" action="RegistrationMailHandler.php">
+            <h2>Fill this form to start the registration</h2>
+            <div class="input">
+                <input type="text" name="name" id="name" required placeholder="Full Name" onkeyup="validateName($('#name').val())">
+                <div class="form-error" id="ename">
+                    <span>Name cannot be empty</span>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" name="phone" id="phone" required placeholder="Phone" onkeyup="validatePhone($('#phone').val())">
+                <div class="form-error" id="ephone">
+				    <span>This phone number is not valid in India</span>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" name="pan" id="pan" required placeholder="PAN Number" onkeyup="validatePan($('#pan').val())">
+                <div class="form-error" id="epan">
+			    	<span>This does not look like a valid Indian PAN Number</span>
+                </div>
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="email" required placeholder="Email" onkeyup="validateEmail($('#email').val())">
+                <div class="form-error" id="eemail">
+				    <span>Looks like this is not an email</span>
+                </div>
+            </div>
+            <button id="registerButton" onclick="validate();">Register</button>
+            <!-- postUserData(); -->
+        </form>
+    </div>
+    <footer>
+        <div class="footercontent">
+            <div class="branding">
+                <div class="naming">
+                    <img src="./images/logo-white-bg.png" class="footer-logo">
+                    <h1>LIC Agent Recruitment</h1>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/pinakiranjan.dubey"><img src="./images/facebook-icon-white.svg"></a>
+                    <a href="#"><img src="./images/instagram-icon-white.svg"></a>
+                    <a href="https://mobile.twitter.com/prdubey2"><img src="./images/twitter-icon-white.svg"></a>
+                </div>
+            </div>
+            <div class="links">
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="#">LIC Forms</a></li>
+                <li><a href="https://www.irdai.gov.in/">IRDAI</a></li>
+                <li><a href="#">NSEIT</a></li>
+            </div>
+        </div>
+        <div class="rights">
+            Copyright &copy; Ayush Kumar 2020. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
