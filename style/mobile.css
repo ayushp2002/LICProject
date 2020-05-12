@@ -13,7 +13,7 @@
         transform: translateY(100%); */
     }
     .regmodal .closeicon:active {
-        background-image: url("/LICProject/images/close-red-icon.svg");
+        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/close-red-icon.svg");
     }
     nav {
         padding: 10px 20px 10px 20px;
@@ -22,7 +22,7 @@
         display: none;
     }
     .home {
-        background-image: url("/LICProject/images/hero-mobile.jpg");
+        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-mobile.jpg");
     }
     .hero .heading-wrapper {
         width: 90%;
@@ -51,7 +51,7 @@
         flex-direction: column;
     }
     .queries {
-        background-image: url("/LICProject/images/queries-hero-mobile.jpg");
+        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/queries-hero-mobile.jpg");
     }
     .main {
         flex-direction: column;

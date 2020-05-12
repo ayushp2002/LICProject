@@ -51,13 +51,13 @@ input:focus, textarea:focus {
     border-color: hsl(0, 100%, 60%) !important;
     border-width: 2px !important;
     background-color: hsl(0, 100%, 90%) !important;
-    background-image: url("/LICProject/images/icon-error.svg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/icon-error.svg");
 }
 .valid-input {
     border-color: hsl(123, 100%, 60%) !important;
     border-width: 2px !important;
     background-color: hsl(123, 100%, 90%) !important;
-    background-image: url("/LICProject/images/icon-valid.svg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/icon-valid.svg");
 }
 .form-error {
     font-size: 13px;
@@ -99,7 +99,7 @@ h2 {
 .regmodal .closeicon{
     height: 30px;
     width: 30px;
-    background-image: url("/LICProject/images/close-grey-icon.svg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/close-grey-icon.svg");
     background-size: cover;
     background-position: center;
     align-self: flex-end;
@@ -251,7 +251,7 @@ nav .logo {
     margin: 10px;
 }
 .guidecall {
-    background-image: url("/LICProject/images/books.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/books.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -414,7 +414,7 @@ nav .logo {
     padding: 35px 10% 35px 10%;
 }
 .registercall::before {
-    background-image: url("/LICProject/images/registration-illustration.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/registration-illustration.jpg");
     opacity: 0.5;
     z-index: -1;
     position: absolute;
@@ -558,14 +558,14 @@ footer .rights {
     color: hsl(210, 75%, 30%);
 }
 .register {
-    background-image: url("/LICProject/images/register-hero.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/register-hero.jpg");
     margin-bottom: 0;
 }
 .register .heading {
     color: hsl(210, 75%, 30%);
 }
 .about {
-    background-image: url("/LICProject/images/hero-about.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-about.jpg");
 }
 .about-main {
     flex-direction: column;
