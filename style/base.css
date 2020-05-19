@@ -251,7 +251,7 @@ nav .logo {
     margin: 10px;
 }
 .guidecall {
-    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/books.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/books.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -414,7 +414,7 @@ nav .logo {
     padding: 35px 10% 35px 10%;
 }
 .registercall::before {
-    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/registration-illustration.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/registration-illustration.webp");
     opacity: 0.5;
     z-index: -1;
     position: absolute;
@@ -558,14 +558,14 @@ footer .rights {
     color: hsl(210, 75%, 30%);
 }
 .register {
-    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/register-hero.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/register-hero.webp");
     margin-bottom: 0;
 }
 .register .heading {
     color: hsl(210, 75%, 30%);
 }
 .about {
-    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-about.jpg");
+    background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-about.webp");
 }
 .about-main {
     flex-direction: column;

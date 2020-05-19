@@ -32,7 +32,7 @@
         width: 50%;
     }
     .home {
-        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-desktop.jpg");
+        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-desktop.webp");
     }
     .content {
         flex-direction: row;
@@ -67,7 +67,7 @@
         background-attachment: fixed;
     }
     .queries {
-        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/queries-hero-desktop.jpg");
+        background-image: url("https://lic-agent-recruitment.herokuapp.com/images/queries-hero-desktop.webp");
     }
     .main {
         flex-direction: row;
