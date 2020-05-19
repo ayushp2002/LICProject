@@ -1,16 +1,22 @@
+// initializing wow
 new WOW().init();
+
+// //initializing lozad lazy loader
+// const observer = lozad();
+// observer.observe();
+
 // To prevent showing the registration modal on home page again and again, we'll use a switch
 // let firstTimeOpened = true;
 
-// function toggleRegprocessContent1() {
-//     if ($("#cont1").css("display") == "flex") {
-//         $("#cont1").css("display", "none");
-//         $("#expicon1").css("transform", "rotate(360deg)");
-//     } else {
-//         $("#cont1").css("display", "flex");
-//         $("#expicon1").css("transform", "rotate(180deg)");
-//     }
-// }
+function toggleRegprocessContent1() {
+    if ($("#cont1").css("display") == "flex") {
+        $("#cont1").css("display", "none");
+        $("#expicon1").css("transform", "rotate(360deg)");
+    } else {
+        $("#cont1").css("display", "flex");
+        $("#expicon1").css("transform", "rotate(180deg)");
+    }
+}
 
 function toggleRegprocessContent2() {
     if ($("#cont2").css("display") == "flex") {

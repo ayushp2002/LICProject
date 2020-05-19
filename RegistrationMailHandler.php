@@ -7,9 +7,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600|Oswald:300,400,500&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://lic-agent-recruitment.herokuapp.com/style/base.css">
-    <link rel="stylesheet" href="https://lic-agent-recruitment.herokuapp.com/style/desktop.css">
-    <link rel="stylesheet" href="https://lic-agent-recruitment.herokuapp.com/style/mobile.css">
+    <link rel="stylesheet" href="https://lic-agent-recruitment.herokuapp.com/style/base.min.css">
+    <link rel="stylesheet" href="https://lic-agent-recruitment.herokuapp.com/style/desktop.min.css">
+    <link rel="stylesheet" href="https://lic-agent-recruitment.herokuapp.com/style/mobile.min.css">
 
     <link rel="icon" href="./images/favicon.png" sizes="32x32" type="image/png">
 
