@@ -1,5 +1,6 @@
 // initializing wow
-new WOW().init();
+// does not work in the minified version
+// new WOW().init();
 
 // //initializing lozad lazy loader
 // const observer = lozad();
