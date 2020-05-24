@@ -745,3 +745,79 @@ footer .rights {
 .licintro {
     background-image: url("https://lic-agent-recruitment.herokuapp.com/images/lic-intro-hero.jpg");
 }
+.licintro-main {
+    flex-direction: column !important; /* To override the flex-direction: row property of main. */
+}
+.licintro-main article {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.licintro-main article .content-with-image .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 0px 0px;
+}
+.licintro-main article .content-with-image .illustration {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    font-size: 12px;
+    text-align: right;
+}
+.licintro-main article .content-with-image .illustration::after {
+    content: "";
+    position: absolute;
+    border: solid 1px hsla(210, 75%, 30%, 0.3);
+    left: -2%;
+    top: -1%;
+    height: 102%;
+    width: 104%;
+}
+.licintro-main article h1 {
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.licintro-main article h1::after {
+    content: "";
+    right: 0;
+    bottom: -5px;
+    position: absolute;
+    border-bottom: solid 2px hsl(210, 75%, 24%);
+    width: 98%;
+}
+.licintro-main article h2 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+.licintro-main article p {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.licintro-main article ul li {
+    list-style: circle;
+    margin-left: 60px;
+}
+.licintro-main article table {
+    margin-top: 20px;
+}
+.licintro-main article table th {
+    background-color: hsl(210, 75%, 25%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+.licintro-main article table th, .licintro-main article table td {
+    border: solid 1px hsl(210, 75%, 25%);
+    padding: 5px 15px;
+    text-align: center;
+}
+.licintro-main .references {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 12px;
+}

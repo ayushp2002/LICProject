@@ -105,4 +105,19 @@
     .registration-complete-wrapper .content ul {
         width: 60%;
     }
+    .licintro-main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .licintro-main .content-with-image {
+        display: flex;
+        flex-direction: row;
+    }
+    .licintro-main article .content-with-image .illustration {
+        width: 40%;
+        line-height: 100%;
+    }
+    .licintro-main article table {
+        margin-left: 30px;
+    }
 }

@@ -79,4 +79,17 @@
     .registration-complete-wrapper .content ul {
         width: 80%;
     }
+    .licintro-main .content-with-image {
+        display: flex;
+        flex-direction: column;
+    }
+    .licintro-main article .content-with-image .illustration {
+        width: 90%;
+        height: 30vh;
+        align-self: center;
+    }
+    .licintro-main article table {
+        align-self: center;
+        width: 80%;
+    }
 }
