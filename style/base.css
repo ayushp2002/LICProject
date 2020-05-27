@@ -213,7 +213,6 @@ nav .logo {
     border-width: 2px;
     border-color: hsla(0, 0%, 0%, 0.6);
     min-height: 175px;
-    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;

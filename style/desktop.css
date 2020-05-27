@@ -30,6 +30,7 @@
     }
     .hero .heading-wrapper {
         width: 50%;
+        height: 35%;
     }
     .home {
         background-image: url("https://lic-agent-recruitment.herokuapp.com/images/hero-desktop.webp");

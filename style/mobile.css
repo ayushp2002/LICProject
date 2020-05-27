@@ -26,6 +26,7 @@
     }
     .hero .heading-wrapper {
         width: 90%;
+        height: 45%;
     }
     .content {
         flex-direction: column;
