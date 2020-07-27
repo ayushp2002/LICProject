@@ -820,3 +820,36 @@ footer .rights {
     margin-bottom: 20px;
     font-size: 12px;
 }
+.adtoppers {
+    position: absolute;
+    z-index: 97;
+    text-align: center;
+    line-height: 35px;
+    width: 260px;
+    padding: 10px;
+    cursor: pointer;
+    top: 20%;
+    left: 0;
+    box-shadow: 1px 1px 6px hsla(0, 0%, 0%, 0.2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 240, 0)), to(rgb(255, 248, 136)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 240, 0), rgb(255, 248, 136));
+    background-image: -moz-linear-gradient(top, rgb(255, 240, 0), rgb(255, 248, 136));
+    background-image: linear-gradient(to bottom, rgb(255, 240, 0), rgb(255, 248, 136));
+}
+.adtoppers:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 248, 136)), to(rgb(255, 240, 0)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 248, 136), rgb(255, 240, 0));
+    background-image: -moz-linear-gradient(top, rgb(255, 248, 136), rgb(255, 240, 0));
+    background-image: linear-gradient(to bottom, rgb(255, 248, 136), rgb(255, 240, 0));
+    box-shadow: 0px 0px 0px hsla(0, 0%, 0%, 0.0);
+    top: 21%;
+}
+.adtoppers a {
+    text-decoration: none;
+    color: hsl(210, 75%, 20%);
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 10px;
+}
